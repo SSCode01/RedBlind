@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803591186281",
+    "project_id": "redblind-cbe11",
+    "storage_bucket": "redblind-cbe11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803591186281:android:428dfea83b4e3fb20bbff8",
+        "android_client_info": {
+          "package_name": "com.example.redblind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADeVgssqM8UDYB86BXcfBwOuc-sM3c7L0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
