@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'screens/login_screen.dart';
 
-void main() {
-  runApp(const StackSyncApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const RedBlindApp());
 }
 
-class StackSyncApp extends StatelessWidget {
-  const StackSyncApp({super.key});
+class RedBlindApp extends StatelessWidget {
+  const RedBlindApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'StackSync',
+      title: 'RedBlind',
 
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF8B0000),
+        scaffoldBackgroundColor: const Color(0xFF8B0000), // Deep red
         primaryColor: const Color(0xFFB11226),
-        fontFamily: 'Inter', // Optional if you add custom font
+        fontFamily: 'Inter',
         colorScheme: const ColorScheme.dark(
           primary: Color(0xFFB11226),
         ),
