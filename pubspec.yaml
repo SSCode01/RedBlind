@@ -21,6 +21,14 @@ dependencies:
   firebase_auth: ^5.3.0
   cloud_firestore: ^5.4.0
 
+  # UI & Animations
+  flutter_animate: ^4.3.0
+
+  # Utilities
+  share_plus: ^10.0.0
+  uuid: ^4.2.2
+  intl: ^0.19.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
